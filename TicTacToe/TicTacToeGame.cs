@@ -10,9 +10,9 @@ namespace TicTacToe
     {
         public void Board()
         {
-            char[] board = new char[9];
+            char[] board = new char[10];
 
-            for (int i = 1; i <= 9; i++)
+            for (int i = 1; i <=10; i++)
             {
                 board[i] = ' ';
             }
