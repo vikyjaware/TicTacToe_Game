@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TicTacToe
+{
+    public class TicTacToeGame
+    {
+        public void Grid()
+        {
+            char[] grid = new char[9];
+
+            for (int i = 0; i <= 10; i++)
+            {
+                grid[i] = ' ';
+            }
+        }
+    }
+}
