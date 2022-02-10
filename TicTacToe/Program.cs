@@ -5,4 +5,3 @@ Console.WriteLine("Welcome to Tic Tac Toe Game !");
 TicTacToeGame game=new TicTacToeGame();
 game.Board();
 game.Player();
-game.Computer();

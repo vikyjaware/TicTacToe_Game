@@ -19,24 +19,25 @@ namespace TicTacToe
         }
         public void Player()
         {
-            Console.WriteLine("Enter your letter X/O ");
-            char play=Convert.ToChar(Console.ReadLine());
-            Console.WriteLine("Player choosen charecter is :\n"+play);
+                Console.WriteLine("Enter your letter X/O \n Enter 1 for X \n Enter 2 for O \n Enter 0 to exit ");
+                int option = Convert.ToInt32(Console.ReadLine());
+            switch (option)
+            {
+                case 0:
+                    break;
+                case 1:
+                    Console.WriteLine("Player choosen charecter is : X \n");
+                    Console.WriteLine("Computer choice is : O " );
+                    break;
 
-        }
-        public void Computer()
-        {
-            Random comp = new Random();
-            int choice=comp.Next(0, 2);
-            if (choice < 1)
-            {
-                Console.WriteLine("Cpmputer choosen charecter is :");
-                Console.WriteLine("X");
-            }
-            else
-            {
-                Console.WriteLine("Computer choosen charecter is :");
-                Console.WriteLine("O");
+                case 2:
+                    Console.WriteLine("Player choosen charecter is : O \n");
+                    Console.WriteLine("Computer choice is : X ");
+                    break;
+
+                default:
+                    Console.WriteLine("Please select correct option");
+                    break;
             }
         }
     }
